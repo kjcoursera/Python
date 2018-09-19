@@ -34,5 +34,5 @@ for file in my_files:
     score.append(df2)
 
 # to data frame
-final_data = pd.DataFrame(score)
-final_data = final_data.iloc[:,0:14]
+final_score = pd.DataFrame(score)
+
