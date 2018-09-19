@@ -22,12 +22,12 @@ for file in my_files:
 # read the file
     df = pd.read_excel(file)
 
-# extract the rows and columns.
+# read the necessary rows and columns.
     data=df.iloc[2:,:]
-# rename the columns 
+# rename the column header
     data=data.rename(columns=data.iloc[0]).drop(data.index[0])
 
-#extract the column
+#extract the recquired column
     df2=data.SCORE
 # changing the header based on value in df.columns[1]
     df2=df2.rename(df.columns[1],inplace =True)
