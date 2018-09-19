@@ -11,7 +11,7 @@ import re
 import glob
 import os
 
-mylist = [f for f in glob.glob("Y:\Documents\Teri\Studyfolders\BAC\ASL2D_Notes\VSMK_dicoms\V*_REST")]
+mylist = [f for f in glob.glob(".\V*_REST")]
 
 params=[]
 
