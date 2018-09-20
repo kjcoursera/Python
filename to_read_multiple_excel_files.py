@@ -27,7 +27,7 @@ for file in my_files:
 # rename the column header
     data=data.rename(columns=data.iloc[0]).drop(data.index[0])
 
-#extract the recquired column
+#extract the required column
     df2=data.SCORE
 # changing the header based on value in df.columns[1]
     df2=df2.rename(df.columns[1],inplace =True)
